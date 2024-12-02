@@ -22,6 +22,15 @@ view: order_items_vijaya {
     timeframes: [raw, time, date, week, month, quarter, year]
     sql: ${TABLE}.returned_at ;;
   }
+  dimension: category {
+    type: string
+    sql: ${TABLE}.category ;;
+    link: {
+      label: "Google"
+      url: "http://www.google.com/search?q={{ value }}"
+
+    }
+  }
   dimension: sale_price {
     type: number
     sql: ${TABLE}.sale_price ;;
