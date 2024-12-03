@@ -124,6 +124,21 @@ explore: orders {
   }
 }
 
+map_layer: test {
+  # url: "https://tolu-demo.s3.eu-west-1.amazonaws.com/uk_postcode_district.json"
+  # url: "https://data.transportation.gov/api/views/iwhi-vi5z/columns.json"
+  # url: "https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/master/ny_new_york_zip_codes_geo.min.json"
+  # url: "https://raw.githack.com/johan/world.geo.json/tree/master/countries/USA"
+  url: "https://gistcdn.githack.com/vinayssss/7bf7950d0f3f8112aff3d4747a5e746f/raw/17cb5ecd23a8ca8dfe2804d63c01607a1721b8dd/gistfile1.txt"
+  # extents_json_url: "https://github.com/johan/world.geo.json/tree/master/countries/USA"
+  # extents_json_url: "https://data.transportation.gov/api/views/iwhi-vi5z/columns.json"
+  # extents_json_url: "https://tolu-demo.s3.eu-west-1.amazonaws.com/uk_postcode_district.json"
+
+  # file: "/gz_2010_us_040_00_500k_(2).json"
+
+}
+
+
 explore: order_items {
   join: orders {
     type: left_outer
