@@ -7,10 +7,11 @@ datagroup: yash_test_api_new_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
-
 persist_with: yash_test_api_new_default_datagroup
 
+
 explore: billion_orders {
+  persist_with: yash_test_api_new_default_datagroup
   join: orders {
     type: left_outer
     sql_on: ${billion_orders.order_id} = ${orders.id} ;;
