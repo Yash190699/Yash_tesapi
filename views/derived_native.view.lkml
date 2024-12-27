@@ -2,6 +2,8 @@ view: derived_native {
 
 
     derived_table: {
+      increment_key: "created_date"
+      increment_offset: 3
       datagroup_trigger: yash_test_api_new_default_datagroup
       indexes: ["order_id"]
       explore_source: order_items {
