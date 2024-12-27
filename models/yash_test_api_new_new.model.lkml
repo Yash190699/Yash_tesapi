@@ -4,7 +4,7 @@ connection: "thelook"
 include: "/views/**/*.view.lkml"
 
 datagroup: yash_test_api_new_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  sql_trigger: select 1;;
   max_cache_age: "1 hour"
 }
 persist_with: yash_test_api_new_default_datagroup
@@ -24,6 +24,8 @@ explore: billion_orders {
     relationship: many_to_one
   }
 }
+
+explore: derived_native {}
 
 explore: connection_reg_r3 {}
 

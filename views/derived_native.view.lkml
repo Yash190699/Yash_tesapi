@@ -3,6 +3,7 @@ view: derived_native {
 
     derived_table: {
       datagroup_trigger: yash_test_api_new_default_datagroup
+      indexes: ["order_id"]
       explore_source: order_items {
         column: order_id {}
         column: created_date { field: orders.created_date }
